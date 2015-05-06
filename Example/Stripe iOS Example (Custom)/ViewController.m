@@ -142,7 +142,9 @@
     STPCheckoutOptions *options = [[STPCheckoutOptions alloc] initWithPublishableKey:[Stripe defaultPublishableKey]];
     options.purchaseDescription = @"Cool Shirt";
     options.purchaseAmount = 1000; // this is in cents
+    options.requireBillingAddress = @YES;
     options.logoColor = [UIColor purpleColor];
+    options.logoImage = [UIImage imageNamed:@"dribbble"];
     STPCheckoutViewController *checkoutViewController = [[STPCheckoutViewController alloc] initWithOptions:options];
     checkoutViewController.checkoutDelegate = self;
     [self presentViewController:checkoutViewController animated:YES completion:nil];

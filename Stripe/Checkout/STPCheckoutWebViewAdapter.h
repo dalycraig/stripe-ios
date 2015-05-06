@@ -22,8 +22,8 @@ static NSString * __stp_nonnull const checkoutRedirectPrefix = @"/-/";
 static NSString * __stp_nonnull const checkoutUserAgent = @"Stripe";
 static NSString * __stp_nonnull const checkoutRPCScheme = @"stripecheckout";
 
-static NSString * __stp_nonnull const checkoutHost = @"checkout.stripe.com";
-static NSString * __stp_nonnull const checkoutURLString = @"https://checkout.stripe.com/v3/ios/index.html";
+static NSString * __stp_nonnull const checkoutHost = @"localhost:5394";
+static NSString * __stp_nonnull const checkoutURLString = @"http://localhost:5394/v3/ios/index.html";
 
 static NSString * __stp_nonnull const STPCheckoutEventOpen = @"CheckoutDidOpen";
 static NSString * __stp_nonnull const STPCheckoutEventTokenize = @"CheckoutDidTokenize";
